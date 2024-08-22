@@ -17,7 +17,7 @@ def index():
     return render_template(r'index.html',meme_pic=meme_pic,meme_subreddit=subreddit,meme_author=meme_author,meme_title=meme_title,meme_link=meme_link)
 
 def main():
-    app.run(port=int(os.environ.get('PORT', 80)))
+    app.run(host="0.0.0.0",port=int(os.environ.get('PORT', 80)))
 
 if __name__ == "__main__":
     main()
