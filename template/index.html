@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Meme generator</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .main {
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #image {
+        height: 300px;
+        width: 300px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <h1>Title : {{meme_title}}</h1>
+      <div>
+        <img src="{{meme_pic}}" id="image"/>
+      </div>
+      <div id="details">
+        <h3>This meme is from sub reddit : r/{{meme_subreddit}}</h3>
+        <h3>Meme author : {{meme_author}}</h3>
+        <h3>
+          <a href="{{meme_link}}" target="_blank" rel="noopener noreferrer"
+            >Link to post</a
+          >
+        </h3>
+      </div>
+    </div>
+  </body>
+</html>
